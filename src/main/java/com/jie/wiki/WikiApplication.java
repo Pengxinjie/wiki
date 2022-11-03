@@ -1,6 +1,5 @@
 package com.jie.wiki;
 
-import org.apache.juli.logging.LogFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -12,6 +11,7 @@ public class WikiApplication {
     private static final Logger LOG = LoggerFactory.getLogger(WikiApplication.class);
 
     public static void main(String[] args) {
+
         SpringApplication app = new SpringApplication(WikiApplication.class);
         Environment env = app.run(args).getEnvironment();
         LOG.info("启动成功！");
