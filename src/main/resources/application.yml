@@ -1,0 +1,13 @@
+server:
+  port: 8083
+
+test:
+  myname: "Neymar"
+
+# 增加数据库连接 （集成mybatis）
+spring:
+  datasource:
+    url: jdbc:mysql://rm-gw03pxp6o6xem1y41so.mysql.cn-chengdu.rds.aliyuncs.com/wiki?characterEncoding=UTF8&autoReconnect=true&serverTimezone=Asia
+    username: wiki
+    password: Pxj12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
