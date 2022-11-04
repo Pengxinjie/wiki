@@ -19,3 +19,8 @@ Content-Type: application/x-www-form-urlencoded
 name=pengxinjie
 
 ###
+
+GET http://localhost:8083/test/list
+Accept: application/json
+
+###

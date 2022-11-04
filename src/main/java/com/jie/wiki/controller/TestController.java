@@ -1,9 +1,14 @@
 package com.jie.wiki.controller;
 
+import com.jie.wiki.domain.Test;
+import com.jie.wiki.service.TestService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @author Pengxinjie
@@ -24,5 +29,13 @@ public class TestController {
     @PostMapping("/hello/post")
     public String helloPost(String name){
         return "hello "+name+",my name is "+MyName+".";
+    }
+
+    @Autowired
+    private TestService testService;
+
+    @GetMapping("/test/list")
+    public List<Test> list(){
+        return testService.list();
     }
 }
