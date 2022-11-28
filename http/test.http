@@ -14,7 +14,6 @@ client.test("test-hello", function() {
 ###
 
 POST http://localhost:8083/hello/post
-Content-Type: application/x-www-form-urlencoded
 
 name=pengxinjie
 
